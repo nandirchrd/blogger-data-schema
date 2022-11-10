@@ -285,10 +285,55 @@
                     "googlePlusShareTag": string,
                     "cmtfpIframe": string,
                     "appRpcRelayPath": string,
-                    "location": {},
-                    "labels": [],
-                    "feedLinks": [],
-                    "comments": [],
+                    "location": {
+                        "mapsUrl": string,
+                        "name": string,
+                    },
+                    "labels": [
+                        {
+                            "name": string,
+                            "url": string,
+                            "isLast": string,
+                        }
+                    ],
+                    "feedLinks": [
+                        {
+                            "url": string,
+                            "type": string,
+                            "feedType": string,
+                            "mimeType": string,
+                        }
+                    ],
+                    "comments": [
+                        {
+                            "id": string,
+                            "inReplyTo": string,
+                            "cmtBodyIdPostFix": string,
+                            "url": string,
+                            "deleteUrl": string,
+                            "body": string,
+                            "timestamp": string,
+                            "timestampValue": number,
+                            "timestampAbs": number,
+                            "author": string,
+                            "authorUrl": string,
+                            "authorPhoto": {
+                                "url": string,
+                                "width": number,
+                                "height": number,
+                                "thumbUrl": string,
+                                "thumbWidth": number,
+                                "thumbHeight": number,
+                            },
+                            "authorAvatarSrc": string,
+                            "authorAvatarImage": string,
+                            "favicon": string,
+                            "anchorName": string,
+                            "isDeleted": boolean,
+                            "adminClass": string,
+                            "authorClass": string,
+                        }
+                    ],
                     "enclosures": [],
                 }
             ],

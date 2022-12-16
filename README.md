@@ -1,115 +1,122 @@
 # BLOGGER DATA SCHEMA
 
 ## List Data
-- Global
-    - blog
-    - messages
-    - skin
-    - template
-    - view
-    - widget
-    - widgets
-- Widgets
-    - Adsense
-    - Attribution
-    - Blog
-    - BlogArchive
-    - BloggerButton
-    - BlogList
-    - BlogSearch
-    - ContactForm
-    - FeaturedPost
-    - Feed
-    - Followers
-    - Header
-    - HTML/Text
-    - Image
-    - Label
-    - LinkList
-    - PageList
-    - PopularPosts
-    - Profile
-    - Stats
-    - Subscribe
-    - TextList
-    - Translate
-    - Wikipedia
+| No |  Global  |
+| -- | -------- |
+| 1  | blog     |
+| 2  | messages |
+| 3  | skin     |
+| 4  | template |
+| 5  | view     |
+| 6  | widget   |
+| 7  | widgets  |
+
+| NO | Widgets       |
+| -- | ------------- |
+| 1  | Adsense       |
+| 2  | Attribution   |
+| 3  | Blog          |
+| 4  | BlogArchive   |
+| 5  | BloggerButton |
+| 6  | BlogList      |
+| 7  | BlogSearch    |
+| 8  | ContactForm   |
+| 9  | FeaturedPost  |
+| 10 | Feed          |
+| 11 | Followers     |
+| 12 | Header        |
+| 13 | HTML/Text     |
+| 14 | Image         |
+| 15 | Label         |
+| 16 | LinkList      |
+| 17 | PageList      |
+| 18 | PopularPosts  |
+| 19 | Profile       |
+| 20 | Stats         |
+| 21 | Subscribe     |
+| 22 | PopularPosts  |
+| 23 | Profile       |
+| 24 | Stats         |
+| 25 | Subscribe     |
+| 26 | TextList      |
+| 27 | Translate     |
+| 28 | Wikipedia     |
 
 ## Data Schema
 - Global Data
     - blog
-        ```json
+        ```typescript
         "data": {
             "blog": {
-                "blogId": string,
-                "postId": string,
-                "pageId": string,
-                "title": string,
-                "pageTitle": string,
-                "pageName": string,
-                "searchLabel": string,
-                "searchQuery": string,
-                "pageType": string,
-                "view": string,
-                "url": string,
-                "canonicalUrl": string,
-                "homePageUrl": string,
-                "canonicalHomepageUrl": string,
-                "searchUrl": string,
-                "blogspotFaviconUrl": string,
-                "bloggerUrl": string,
-                "metaDescription": string,
-                "analyticsAccountNumber": string,
-                "locale": string,
-                "localeUnderscoreDelimited": string,
-                "languageDirection": string,
-                "encoding": string,
-                "hasCustomDomain": boolean,
-                "httpsEnabled": boolean,
-                "enabledCommentProfileImages": boolean,
-                "isPrivate": boolean,
-                "isPrivateBlog": boolean,
-                "adultContent": boolean,
-                "isMobile": boolean,
-                "isMobileRequest": boolean,
-                "mobileClass": string,
-                "feedLinks": string,
-                "postImageUrl": string,
-                "postImageThumbnailUrl": string,
-                "latencyHeadScript": string,
-                "mobileHeadScript": string,
-                "dynamicViewsScriptSrc": string,
-                "dynamicViewsCommentsSrc": string,
-                "ieCssRetrofitLinks": string,
-                "adsenseHostId": string,
-                "adsenseClientId": string,
-                "adsenseHasAds": boolean,
-                "adsenseAutoAds": boolean,
-                "jumpLinkMessage": string,
-                "hasCustomJumpLinkMessage": boolean,
-                "isDynamicViewsAvailable": boolean,
-                "meTag": string,
-                "gPlusViewType": string,
-                "plusOneApiSrc": string,
-                "disableGComments": string,
+                "blogId": String,
+                "postId": String,
+                "pageId": String,
+                "title": String,
+                "pageTitle": String,
+                "pageName": String,
+                "searchLabel": String,
+                "searchQuery": String,
+                "pageType": String,
+                "view": String,
+                "url": String,
+                "canonicalUrl": String,
+                "homePageUrl": String,
+                "canonicalHomepageUrl": String,
+                "searchUrl": String,
+                "blogspotFaviconUrl": String,
+                "bloggerUrl": String,
+                "metaDescription": String,
+                "analyticsAccountNumber": String,
+                "locale": String,
+                "localeUnderscoreDelimited": String,
+                "languageDirection": String,
+                "encoding": String,
+                "hasCustomDomain": Boolean,
+                "httpsEnabled": Boolean,
+                "enabledCommentProfileImages": Boolean,
+                "isPrivate": Boolean,
+                "isPrivateBlog": Boolean,
+                "adultContent": Boolean,
+                "isMobile": Boolean,
+                "isMobileRequest": Boolean,
+                "mobileClass": String,
+                "feedLinks": String,
+                "postImageUrl": String,
+                "postImageThumbnailUrl": String,
+                "latencyHeadScript": String,
+                "mobileHeadScript": String,
+                "dynamicViewsScriptSrc": String,
+                "dynamicViewsCommentsSrc": String,
+                "ieCssRetrofitLinks": String,
+                "adsenseHostId": String,
+                "adsenseClientId": String,
+                "adsenseHasAds": Boolean,
+                "adsenseAutoAds": Boolean,
+                "jumpLinkMessage": String,
+                "hasCustomJumpLinkMessage": Boolean,
+                "isDynamicViewsAvailable": Boolean,
+                "meTag": String,
+                "gPlusViewType": String,
+                "plusOneApiSrc": String,
+                "disableGComments": String,
                 "sharing": {
-                    "disableGooglePlus": boolean,
-                    "googlePlusBootstrap": string,
-                    "googlePlusShareButtonWidth": number,
+                    "disableGooglePlus": Boolean,
+                    "googlePlusBootstrap": String,
+                    "googlePlusShareButtonWidth": Number,
                     "platforms": [{
-                        "name": string,
-                        "key": string,
-                        "shareMessage": string,
-                        "target": string,
+                        "name": String,
+                        "key": String,
+                        "shareMessage": String,
+                        "target": String,
                     }],
                         {
-                            "size": number,
-                            "length": number,
-                            "empty": boolean,
-                            "notEmpty": boolean,
-                            "any": boolean,
-                            "first": string,
-                            "last": string,
+                            "size": Number,
+                            "length": Number,
+                            "empty": Boolean,
+                            "notEmpty": Boolean,
+                            "any": Boolean,
+                            "first": String,
+                            "last": String,
                         }, 
                     ,
                 },
@@ -117,248 +124,227 @@
         }
         ```
     - view
-    ```json
+        ```typescript
         "data": {
             "view": {
-                "postId": number,
-                "pageId": number,
-                "type": string,
-                "featuredImage": string,
-                "title": string,
-                "description": string,
-                "url": string,
-                "isPost": boolean,
-                "isPage": boolean,
-                "isHomepage": boolean,
-                "isSearch": boolean,
-                "isArchive": boolean,
-                "isError": boolean,
-                "isLabelSearch": boolean,
-                "isSingleItem": boolean,
-                "isMultipleItems": boolean,
-                "isMobile": boolean,
-                "isPreview": boolean,
-                "isLayoutMode": boolean,
+                "postId": Number,
+                "pageId": Number,
+                "type": String,
+                "featuredImage": String,
+                "title": String,
+                "description": String,
+                "url": String,
+                "isPost": Boolean,
+                "isPage": Boolean,
+                "isHomepage": Boolean,
+                "isSearch": Boolean,
+                "isArchive": Boolean,
+                "isError": Boolean,
+                "isLabelSearch": Boolean,
+                "isSingleItem": Boolean,
+                "isMultipleItems": Boolean,
+                "isMobile": Boolean,
+                "isPreview": Boolean,
+                "isLayoutMode": Boolean,
                 "search": {
-                    "resultsMessageHtml": string,
-                    "resultsMessage": string,
-                    "query": string,
-                    "label": string,
+                    "resultsMessageHtml": String,
+                    "resultsMessage": String,
+                    "query": String,
+                    "label": String,
                 },
                 "archive": {
-                    "rangeMessage": string,
-                    "day": number,
-                    "month": number,
-                    "year": number,
+                    "rangeMessage": String,
+                    "day": Number,
+                    "month": Number,
+                    "year": Number,
                 },
             }
         }
+        ```
 - Widgets Data
     - Blog
-    ```json
+        ```typescript
         "version 1"
         {
-            "title": string,
-            "description": string,
-            "numPosts": number,
-            "mobile": boolean,
-            "postLabelsLabel": string,
-            "timestampLabel": string,
-            "authorLabel": string,
-            "commentLabel": string,
-            "commentLabelPlural": string,
-            "postLocationLabel": string,
-            "showTimestamp": boolean,
-            "showLocation": boolean,
-            "showAuthor": boolean,
-            "showPostLabels": boolean,
-            "showMobileShare": boolean,
-            "showEmailButton": boolean,
-            "showBlogThisButton": boolean,
-            "showTwitterButton": boolean,
-            "showFacebookButton": boolean,
-            "showPinterestButton": boolean,
-            "showDummy": boolean,
-            "showPlusOne": boolean,
-            "olderPageUrl": string,
-            "olderPageTitle": string,
-            "newerPageUrl": string,
-            "newerPageTitle": string,
-            "mobileLinkUrl": string,
-            "mobileLinkMsg": string,
-            "dekstopLinkUrl": string,
-            "dekstopLinkMsg": string,
-            "homeMsg": string,
-            "navMessage": string,
-            "postCommentMsg": string,
-            "blogCommentMessage": string,
-            "blogTeamBlogMessage": string,
-            "feedLinkMsg": string,
-            "commentPostedByMsg": string,
-            "shareMsg": string,
-            "shareToTwitterMsg": string,
-            "shareToFacebookMsg": string,
-            "shareToPinterestMsg": string,
-            "blogThisMsg": string,
-            "emailThisMsg": string,
-            "emailPostMsg": string,
-            "editPostMsg": string,
-            "deletCommentMsg": string,
-            "adCode": string,
-            "cmtIframeInitialHeight": string,
-            "showCmtPopup": boolean,
-            "backgroundColor": string,
-            "linkColor": string,
-            "textColor": string,
-            "languageCode": string,
+            "title": String,
+            "description": String,
+            "numPosts": Number,
+            "mobile": Boolean,
+            "postLabelsLabel": String,
+            "timestampLabel": String,
+            "authorLabel": String,
+            "commentLabel": String,
+            "commentLabelPlural": String,
+            "postLocationLabel": String,
+            "showTimestamp": Boolean,
+            "showLocation": Boolean,
+            "showAuthor": Boolean,
+            "showPostLabels": Boolean,
+            "showMobileShare": Boolean,
+            "showEmailButton": Boolean,
+            "showBlogThisButton": Boolean,
+            "showTwitterButton": Boolean,
+            "showFacebookButton": Boolean,
+            "showPinterestButton": Boolean,
+            "showDummy": Boolean,
+            "showPlusOne": Boolean,
+            "olderPageUrl": String,
+            "olderPageTitle": String,
+            "newerPageUrl": String,
+            "newerPageTitle": String,
+            "mobileLinkUrl": String,
+            "mobileLinkMsg": String,
+            "dekstopLinkUrl": String,
+            "dekstopLinkMsg": String,
+            "homeMsg": String,
+            "navMessage": String,
+            "postCommentMsg": String,
+            "blogCommentMessage": String,
+            "blogTeamBlogMessage": String,
+            "feedLinkMsg": String,
+            "commentPostedByMsg": String,
+            "shareMsg": String,
+            "shareToTwitterMsg": String,
+            "shareToFacebookMsg": String,
+            "shareToPinterestMsg": String,
+            "blogThisMsg": String,
+            "emailThisMsg": String,
+            "emailPostMsg": String,
+            "editPostMsg": String,
+            "deletCommentMsg": String,
+            "adCode": String,
+            "cmtIframeInitialHeight": String,
+            "showCmtPopup": Boolean,
+            "backgroundColor": String,
+            "linkColor": String,
+            "textColor": String,
+            "languageCode": String,
             "feedLinks": [
                 {
-                    "url": string,
-                    "name": string,
-                    "feedType": string,
-                    "mimeType": string,
+                    "url": String,
+                    "name": String,
+                    "feedType": String,
+                    "mimeType": String,
                 }
             ],
             "posts": [
                 {
-                    "id": string,
-                    "title": string,
-                    "body": string,
-                    "snippet": string,
-                    "longSnippet": string,
-                    "url": string,
-                    "canonicalUrl": string,
-                    "absoluteUrl": string,
-                    "link": string,
-                    "thumbnailUrl": string,
-                    "firstImageUrl": string,
+                    "id": String,
+                    "title": String,
+                    "body": String,
+                    "snippet": String,
+                    "longSnippet": String,
+                    "url": String,
+                    "canonicalUrl": String,
+                    "absoluteUrl": String,
+                    "link": String,
+                    "thumbnailUrl": String,
+                    "firstImageUrl": String,
                     "date": date,
-                    "dateHeader": string,
-                    "timestamp": string,
-                    "timestampISO8601": string,
-                    "lastUpdatedISO8601": string,
-                    "author": string,
-                    "authorProfileUrl": string,
-                    "authorAboutMe": string,
+                    "dateHeader": String,
+                    "timestamp": String,
+                    "timestampISO8601": String,
+                    "lastUpdatedISO8601": String,
+                    "author": String,
+                    "authorProfileUrl": String,
+                    "authorAboutMe": String,
                     "authorPhoto": {},
-                    "hasJumplink": boolean,
-                    "jumpText": string,
-                    "isFirstPost": boolean,
-                    "isDateStart": boolean,
-                    "adminClass": string,
-                    "editUrl": string,
-                    "commentSource": number,
-                    "commentConfig": string,
-                    "commentJso": string,
-                    "commentMsgs": string,
-                    "commentSrc": string,
-                    "allowComments": boolean,
-                    "allowNewComments": boolean,
-                    "noNewCommentsText": string,
-                    "numComments": number,
-                    "commentLabelFull": string,
-                    "addCommentUrl": string,
-                    "addCommentOnclick": string,
-                    "commentPagingRequired": boolean,
-                    "hadOlderLinks": boolean,
-                    "oldLinkClass": string,
-                    "oldestLinkUrl": string,
-                    "oldestLinkText": string,
-                    "olderLinkUrl": string,
-                    "olderLinkText": string,
-                    "hasNewerLinks": boolean,
-                    "newLinkClass": string,
-                    "newerLinkUrl": string,
-                    "newerLinkText": string,
-                    "newestLinkUrl": string,
-                    "newestLinkText": string,
-                    "commentRangeText": string,
-                    "commentFromIframeSrc": string,
-                    "embedCommentForm": boolean,
-                    "showThreadedComments": boolean,
-                    "commentHtml": string,
-                    "avatarIndentClass": string,
-                    "includeAd": boolean,
-                    "emailPostUrl": string,
-                    "sharePostUrl": string,
-                    "dummyTag": string,
-                    "googlePlusShareTag": string,
-                    "cmtfpIframe": string,
-                    "appRpcRelayPath": string,
+                    "hasJumplink": Boolean,
+                    "jumpText": String,
+                    "isFirstPost": Boolean,
+                    "isDateStart": Boolean,
+                    "adminClass": String,
+                    "editUrl": String,
+                    "commentSource": Number,
+                    "commentConfig": String,
+                    "commentJso": String,
+                    "commentMsgs": String,
+                    "commentSrc": String,
+                    "allowComments": Boolean,
+                    "allowNewComments": Boolean,
+                    "noNewCommentsText": String,
+                    "numComments": Number,
+                    "commentLabelFull": String,
+                    "addCommentUrl": String,
+                    "addCommentOnclick": String,
+                    "commentPagingRequired": Boolean,
+                    "hadOlderLinks": Boolean,
+                    "oldLinkClass": String,
+                    "oldestLinkUrl": String,
+                    "oldestLinkText": String,
+                    "olderLinkUrl": String,
+                    "olderLinkText": String,
+                    "hasNewerLinks": Boolean,
+                    "newLinkClass": String,
+                    "newerLinkUrl": String,
+                    "newerLinkText": String,
+                    "newestLinkUrl": String,
+                    "newestLinkText": String,
+                    "commentRangeText": String,
+                    "commentFromIframeSrc": String,
+                    "embedCommentForm": Boolean,
+                    "showThreadedComments": Boolean,
+                    "commentHtml": String,
+                    "avatarIndentClass": String,
+                    "includeAd": Boolean,
+                    "emailPostUrl": String,
+                    "sharePostUrl": String,
+                    "dummyTag": String,
+                    "googlePlusShareTag": String,
+                    "cmtfpIframe": String,
+                    "appRpcRelayPath": String,
                     "location": {
-                        "mapsUrl": string,
-                        "name": string,
+                        "mapsUrl": String,
+                        "name": String,
                     },
                     "labels": [
                         {
-                            "name": string,
-                            "url": string,
-                            "isLast": string,
+                            "name": String,
+                            "url": String,
+                            "isLast": String,
                         }
                     ],
                     "feedLinks": [
                         {
-                            "url": string,
-                            "type": string,
-                            "feedType": string,
-                            "mimeType": string,
+                            "url": String,
+                            "type": String,
+                            "feedType": String,
+                            "mimeType": String,
                         }
                     ],
                     "comments": [
                         {
-                            "id": string,
-                            "inReplyTo": string,
-                            "cmtBodyIdPostFix": string,
-                            "url": string,
-                            "deleteUrl": string,
-                            "body": string,
-                            "timestamp": string,
-                            "timestampValue": number,
-                            "timestampAbs": number,
-                            "author": string,
-                            "authorUrl": string,
+                            "id": String,
+                            "inReplyTo": String,
+                            "cmtBodyIdPostFix": String,
+                            "url": String,
+                            "deleteUrl": String,
+                            "body": String,
+                            "timestamp": String,
+                            "timestampValue": Number,
+                            "timestampAbs": Number,
+                            "author": String,
+                            "authorUrl": String,
                             "authorPhoto": {
-                                "url": string,
-                                "width": number,
-                                "height": number,
-                                "thumbUrl": string,
-                                "thumbWidth": number,
-                                "thumbHeight": number,
+                                "url": String,
+                                "width": Number,
+                                "height": Number,
+                                "thumbUrl": String,
+                                "thumbWidth": Number,
+                                "thumbHeight": Number,
                             },
-                            "authorAvatarSrc": string,
-                            "authorAvatarImage": string,
-                            "favicon": string,
-                            "anchorName": string,
-                            "isDeleted": boolean,
-                            "adminClass": string,
-                            "authorClass": string,
+                            "authorAvatarSrc": String,
+                            "authorAvatarImage": String,
+                            "favicon": String,
+                            "anchorName": String,
+                            "isDeleted": Boolean,
+                            "adminClass": String,
+                            "authorClass": String,
                         }
                     ],
                     "enclosures": [],
                 }
             ],
         }
-
-        "version 2"
-        {
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-            "title": string,
-        }
-    ```
+        ```
 
